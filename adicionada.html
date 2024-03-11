@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADICIONADO EM UM IFRAME </title>
+    <style>
+    p{
+        text-align:center;
+    }
+    a{
+        color:aliceblue;
+    }
+    </style>
+</head>
+<body>
+
+<p> ANCORA DENTRO DO IFRAME </p>
+<a href=" #"onclick="clicou()">CLICK</a>
+
+<div  id="msg">  CLICANDO </div>
+
+
+
+
+<script>
+var msg=window.document.querySelector('#msg')
+function clicou(){
+
+msg.innerHTML+=`<p> click mais  </p>`
+msg.style.background='green'
+msg.style.color='yellow'
+}
+
+
+</script>
+    
+</body>
+</html>
